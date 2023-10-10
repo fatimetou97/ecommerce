@@ -20,7 +20,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label" >Attribute Name</label>
-                    <input class="form-control"  type="text" value="{{old('name')}}"  name="name">
+                    <input class="form-control"  placeholder="Exemple:color,size.." type="text" value="{{old('name')}}"  name="name">
 
                     @error('name')
                     @foreach ($errors->get('name')  as $message)

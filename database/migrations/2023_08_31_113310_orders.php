@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('mobile');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('note')->nullable();
             $table->enum('status',['ordered','delivered','canceled'])->default('ordered');
             $table->bigInteger('customer_id');

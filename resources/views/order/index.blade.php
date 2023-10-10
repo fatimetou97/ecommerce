@@ -91,16 +91,16 @@
                 type="button" class="btn bg-gradient-info w-auto me-2">
                 <i class="bi bi-info-circle"></i>
                  </button>
-                <a data-bs-toggle="modal" data-bs-target="#deletecategoryModal{{$item->id}}"
-                      title="Delete Category">
-                  <button  class="btn bg-gradient-danger w-auto me-2"><i class="bi bi-trash"></i></button>
+                <a data-bs-toggle="modal" data-bs-target="#archiveorderModal{{$item->id}}"
+                      title="Archive Order">
+                  <button  class="btn bg-gradient-danger w-auto me-2"><i class="bi bi-archive"></i></button>
                  </a>
              </td>
 
 
 
 
-                @include('category.delete')
+
               </tr>
 
              @endforeach

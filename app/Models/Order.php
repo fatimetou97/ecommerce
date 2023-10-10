@@ -11,7 +11,7 @@ class Order extends Model
 {
     use HasFactory;
 
-    protected $fillable=['subtotal','total','currency','mobile','city_id','shipping_id','status','firstname','lastname'];
+    protected $fillable=['subtotal','total','currency','mobile','customer_id','city_id','shipping_id','discount_id','status','firstname','lastname','email','note'];
     public function customer(){
         return $this->BelongsTo(Customer::class);
     }

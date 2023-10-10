@@ -42,4 +42,7 @@ class Product extends Model implements HasMedia
     {
         return $this->hasOne(OrderItem::class);
     }
+
+
+
 }

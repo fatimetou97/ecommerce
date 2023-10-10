@@ -72,7 +72,6 @@ class ProductController extends Controller
     }
 
     public function attributes_product($id){
-     // $product=ProductAttribute::where('product_id','=',$id)->get();
      $product_attributes=product::find($id)->attribute_options()->orderBy('id','DESC')->paginate(10);
      $product=product::find($id);
       return view('products.product_attributes',

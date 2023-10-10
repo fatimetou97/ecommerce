@@ -21,23 +21,27 @@
         </thead>
 
         <tbody>
+            @foreach ($order_options as $key => $value)
 
+
+            <div class="d-flex px-2 py-1">
+                <div class="d-flex flex-column justify-content-center">
+                <h6 class="mb-0 text-sm">
+                    {{ $key }}</h6>
    <tr>
-
+    @foreach($value as $item)
       <td>
-          <div class="d-flex px-2 py-1">
-              <div class="d-flex flex-column justify-content-center">
-              <h6 class="mb-0 text-sm">
-             red</h6>
+
     <p class="text-xs text-secondary mb-1">
-       color</p>
+        {{$item->attribute_option_name}}</p>
               </div>
           </div>
         </td>
 
-
+        @endforeach
 
     </tr>
+    @endforeach
 
         </tbody>
 
